@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    .container{
+        background-color: white;
+        height: 500px;
+        width: 400px;
+        margin-left: 500px;
+        border-radius: 10px;
+    }
+    .form-container{
+        margin-left: 50px;
+    }
+
+  
+</style>
+<body style="background-color: whitesmoke;">
+<div class="container">
+    <div class="form-container">
+        <form action="/submit" method="post" enctype="multipart/form-data">
+        <h1>Client Details</h1>
+        <br/>
+        <label>
+          Full  Name
+        </label>
+        <input type="text" id="name" name="name"/>
+        <br/>
+        <br/>
+
+         <label>Enter Email</label>
+         
+         <input type="email" id="email" name="email"/>
+         <br><br>
+        <label>Password</label>
+        
+        <input type="password" id="password" name="password"/>
+        
+        
+    </br></br>
+         <label>D.O.B</label>
+         <input type="date" id="dob" name="dob"></br></br>
+         <label for="image">Image</label>
+         <input type="file" id="image" name="image" accept="image/*" required></br></br>
+         
+</br>
+<label>Gender</label>
+<select name="gender">
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+<br/>
+
+<br/>
+         <button>Submit</button>
+</div> 
+</div>
+    </form>
+</div>
+</div>
+</body>
+</html>
